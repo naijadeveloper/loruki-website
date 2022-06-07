@@ -3,6 +3,8 @@
 /* Variables */
 :root {
   --primary-color: crimson;
+  --complementary-col1: #fff;
+  --complementary-col2: #333;
 }
 
 /* Reset and Base rulesets */
@@ -14,7 +16,7 @@
 
 body {
   font-family: 'Lato', sans-serif;
-  color: #333;
+  color: var(--complementary-col2);
   line-height: 1.6;
 }
 
@@ -24,7 +26,7 @@ ul {
 
 a {
   text-decoration: none;
-  color: #333;
+  color: var(--complementary-col2);
 }
 
 h1, h2 {
@@ -41,63 +43,11 @@ img {
   width: 100%;
 }
 
-/* Utilities */
-.container {
-  max-width: 1100px;
-  margin: 0 auto;
-  overflow: auto;
-  padding: 0 40px;
-}
-
-.flex {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-}
-
-.grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-}
-
-.card {
-  background-color: #fff;
-  color: #333;
-  border-radius: 10px;
-  padding: 20px;
-  margin: 10px;
-  box-shadow: 0 10px 5px rgba(0, 0, 0, 0.2);
-}
-
-.btn {
-  display: inline-block;
-  padding: 10px 30px;
-  cursor: pointer;
-  background: var(--primary-color);
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-}
-
-.btn-outline {
-  background-color: transparent;
-  border: 1px #fff solid;
-}
-
-.btn:hover {
-  transform: scale(0.98);
-}
-
 
 /* Navbar */
 .navbar {
   background-color: var(--primary-color);
-  color: #fff;
+  color: var(--complementary-col1);
   height: 70px;
 }
 
@@ -106,7 +56,7 @@ img {
 }
 
 .navbar a {
-  color: #fff;
+  color: var(--complementary-col1);
   padding: 10px;
   margin: 0 5px;
 }
@@ -124,7 +74,7 @@ img {
 .showcase {
   height: 400px;
   background-color: var(--primary-color);
-  color: #fff;
+  color: var(--complementary-col1);
   position: relative;
 }
 
@@ -176,7 +126,7 @@ img {
   content: "";
   position: absolute;
   height: 100px;
-  background-color: #fff;
+  background-color: var(--complementary-col1);
   bottom: -70px;
   right: 0;
   left: 0;
@@ -184,4 +134,24 @@ img {
   -webkit-transform: skewY(-3deg);
   -moz-transform: skewY(-3deg);
   -ms-transform: skewY(-3deg)
+}
+
+
+/* Stats */
+.stats {
+  padding-top: 100px;
+}
+
+.stats-heading {
+  max-width: 500px;
+  margin: auto;
+}
+
+.stats .grid h3 {
+  font-size: 35px;
+}
+
+.stats .grid p {
+  font-size: 20px;
+  font-weight: bold;
 }
