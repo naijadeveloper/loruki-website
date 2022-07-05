@@ -3,6 +3,9 @@
 /* Variables */
 :root {
   --primary-color: crimson;
+  --secondary-color: rgb(157, 13, 42);
+  --dark-color: rgb(95, 7, 25);
+  --light-color: #f4f4f4;
   --complementary-col1: #fff;
   --complementary-col2: #333;
 }
@@ -166,4 +169,10 @@ img {
 .cli .grid > *:first-child {
   grid-column: 1 / span 2;
   grid-row: 1 / span 2;
+}
+
+
+/* Cloud */
+.cloud .grid {
+  grid-template-columns: 4fr 3fr
 }
