@@ -58,19 +58,28 @@
 .bg-primary,
 .btn-primary {
   background-color: var(--primary-color);
-  color: #fff;
+  color: var(--complementary-col1);
 }
 
 .bg-secondary,
 .btn-secondary {
   background-color: var(--secondary-color);
-  color: #fff;
+  color: var(--complementary-col1);
 }
 
 .bg-dark,
 .btn-dark {
   background-color: var(--dark-color);
-  color: #fff;
+  color: var(--complementary-col1);
+}
+
+.bg-primary a,
+.btn-primary a,
+.bg-secondary a,
+.btn-secondary a,
+.bg-dark a,
+.btn-dark a {
+  color: var(--complementary-col1);
 }
 
 .bg-light,
