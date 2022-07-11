@@ -205,6 +205,22 @@ img {
 }
 
 
+/* Features */
+.features-head img, .features-sub-head img {
+  width: 200px;
+  justify-self: flex-end;
+}
+
+.features-sub-head img {
+  width: 300px;
+  justify-self: flex-end;
+}
+
+.features-sub-head p {
+  font-weight: bold;
+}
+
+
 /* Tablets and under */
 @media (max-width: 930px) {
   .grid,
