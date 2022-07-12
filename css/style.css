@@ -6,6 +6,8 @@
   --secondary-color: rgb(157, 13, 42);
   --dark-color: rgb(95, 7, 25);
   --light-color: #f4f4f4;
+  --success-color: #5cb85c;
+  --error-color: #d9534f;
   --complementary-col1: #fff;
   --complementary-col2: #333;
 }
@@ -44,6 +46,13 @@ p {
 
 img {
   width: 100%;
+}
+
+code,
+pre {
+  background-color: var(--complementary-col2);
+  color: var(--complementary-col1);
+  padding: 10px;
 }
 
 
@@ -200,7 +209,7 @@ img {
 
 
 /* Features */
-.features-head img, .features-sub-head img {
+.features-head img, .docs-head img {
   width: 200px;
   justify-self: flex-end;
 }
@@ -230,6 +239,28 @@ img {
 
 .features-main .grid > *:nth-child(2) {
   grid-column: 1 / span 2;
+}
+
+
+/* Docs */
+.docs-main h3 {
+  margin: 20px 0;
+}
+
+.docs-main .grid {
+  grid-template-columns: 1fr 2fr;
+  align-items: flex-start;
+}
+
+.docs-main nav li {
+  font-size: 17px;
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+  border-bottom: 1px #ccc solid;
+}
+
+.docs-main a:hover {
+  font-weight: bold;
 }
 
 

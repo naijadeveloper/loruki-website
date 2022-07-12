@@ -73,6 +73,12 @@
   color: var(--complementary-col1);
 }
 
+.bg-light,
+.btn-light {
+  background-color: var(--light-color);
+  color: var(--complementary-col2);
+}
+
 .bg-primary a,
 .btn-primary a,
 .bg-secondary a,
@@ -82,10 +88,22 @@
   color: var(--complementary-col1);
 }
 
-.bg-light,
-.btn-light {
-  background-color: var(--light-color);
-  color: var(--complementary-col2);
+
+/* Text colors */
+.text-primary {
+  color: var(--primary-color);
+}
+
+.text-secondary {
+  color: var(--secondary-color);
+}
+
+.text-dark {
+  color: var(--dark-color);
+}
+
+.text-light {
+  color: var(--light-color);
 }
 
 /* Text sizes */
@@ -112,6 +130,30 @@
 .text-center {
   text-align: center;
 }
+
+
+/* Alert */
+.alert {
+  background-color: var(--light-color);
+  padding: 10px 20px;
+  font-weight: bold;
+  margin: 15px 0;
+}
+
+.alert i {
+  margin-right: 10px;
+}
+
+.alert-success {
+  background-color: var(--success-color);
+  color: var(--complementary-col1);
+}
+
+.alert-error {
+  background-color: var(--error-color);
+  color: var(--complementary-col1);
+}
+
 
 /* margin on y i.e top and bottom */
 .my-1 {
